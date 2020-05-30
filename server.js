@@ -9,8 +9,6 @@ app.use(bodyParser.json());
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const config = require('./app/config/config.js');
-
 const db = require("./app/models");
 db.mongoose
   .connect(db.url, {
