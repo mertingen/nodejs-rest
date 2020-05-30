@@ -1,0 +1,7 @@
+{
+    "development": {
+        "config_id": "development",
+        "node_port": 8080,
+        "database": ""
+    }
+}
