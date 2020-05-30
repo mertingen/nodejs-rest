@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
-console.log("ENV:" + process.env.NODE_ENV);
+
 var URL = '';
 if (process.env.NODE_ENV == 'production'){
 	URL = process.env.MONGODB_URL;
