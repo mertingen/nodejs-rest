@@ -20,6 +20,19 @@ npm install
 ```
 node server.js
 ```
+
+### For Docker
+
+Go to the directory that has your Dockerfile and run the following command to build the Docker image. It's easier to find later using the docker images command:
+
+```
+docker build -t <your username>/node-rest .
+```
+
+```
+docker run -p 8080:8080 -d <your username>/node-rest
+```
+
 # nodejs-rest
 
 Request Payload:
