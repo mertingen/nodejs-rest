@@ -33,6 +33,16 @@ docker build -t <your username>/node-rest .
 docker run -p 8080:8080 -d <your username>/node-rest
 ```
 
+### For Jest Testing
+
+For testing, I created app/tests directory to gather test files. The following command runs the tests. I've checked response length from mongodb.
+
+```
+npm run test app/tests
+```
+
+
+
 # nodejs-rest
 
 Request Payload:
