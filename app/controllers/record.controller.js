@@ -32,7 +32,7 @@ exports.findAll = async (req, res) => {
         {
           $match: {
             createdAt: {
-              // createdAt >=  startDate and createdAt <= endDate
+              // createdAt >=  startDate, createdAt <= endDate
               $gte: startDate,
               $lte: endDate
             }
@@ -51,7 +51,7 @@ exports.findAll = async (req, res) => {
         },
         {
           $match: {
-            // totalCount >=  minCount and totalCount <= maxCount
+            // totalCount >=  minCount, totalCount <= maxCount
             totalCount:{
               $gte: minCount,
               $lte: maxCount

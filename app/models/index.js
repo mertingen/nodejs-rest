@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
 
 var URL = '';
+// according to the environment, configuration resource varies.
 if (process.env.NODE_ENV == 'production'){
 	URL = process.env.MONGODB_URL;
 } else if (process.env.NODE_ENV == 'development' || !process.env.NODE_ENV) {
